@@ -1,8 +1,28 @@
+Template.customize.helpers({
 
-Template.quiz.helpers({
-
-	questions: function() {
-		var data = Questions.find({}).fetch();
-		return data;
+	categories: function(){
+		return categories = [
+			{
+				category: 'general'
+			},
+			{
+				category: 'html'
+			},
+			{
+				category: 'css'
+			},
+			{
+				category: 'javascript'
+			},
+			{
+				category: 'testing'
+			},
+			{
+				category: 'performance'
+			},
+			{
+				category: 'network'
+			}
+		];
 	}
 });

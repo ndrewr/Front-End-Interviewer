@@ -21,3 +21,10 @@ FlowRouter.route('/quiz', {
     BlazeLayout.render('layout', { main: 'quiz' });
   }
 });
+
+FlowRouter.route('/add-question', {
+  name: 'quiz',
+  action: function() {
+    BlazeLayout.render('layout', { main: 'add_question' });
+  }
+});

@@ -1,0 +1,32 @@
+<template name="add_question">
+	<section id="addQuestion" class="container">
+		<a href="/" class="btn btn-secondary-outline btn-sm">
+			<i class="fa fa-chevron-left fa-2x"></i>
+		</a>
+		<div class="row">
+			<fieldset class="input-group">
+				<label class="col-xs-12">question
+					<textarea class="form-control" id="questionText"></textarea>
+				</label>
+				<label class="col-xs-12">answer
+					<textarea class="form-control" id="answerText"></textarea>
+				</label>
+				<label class="col-xs-12">category
+					<select class="form-control" id="categoryText">
+						<option value="" selected disabled>select a category</option>
+						<option value="general">general</option>
+						<option value="html">html</option>
+						<option value="css">css</option>
+						<option value="javascript">javascript</option>
+						<option value="testing">testing</option>
+						<option value="performance">performance</option>
+						<option value="networking">networking</option>
+					</select>
+				</label>
+				<div class="col-xs-12">
+					<button id="submitQuestionAnswer" class="btn btn-primary-outline btn-block">Add Question <i class="fa fa-plus"></i></button>
+				</div>
+			</fieldset>
+		</div>
+	</section>
+</template>
