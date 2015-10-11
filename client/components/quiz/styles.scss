@@ -1,0 +1,15 @@
+#quiz {	
+	.list-group-item {
+		a {
+			color: #555;
+			text-decoration: none;
+
+			&:hover,
+			&:focus,
+			&:active {
+				text-decoration: none;
+				color: lighten(#555, 5%);
+			}
+		}
+	}
+}
