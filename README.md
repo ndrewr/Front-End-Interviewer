@@ -17,6 +17,6 @@ http://h5bp.github.io/Front-end-Developer-Interview-Questions
 ##team
 Byron => byron@polished-web.com
 
-Andrew => uncle.optimus@github.com
+Andrew => uncle.optimus@gmail.com
 
 Jung => ??? Hey dude email one of us! Will be hacking away at this tonite and maybe tmrw! We got some ideas!!
