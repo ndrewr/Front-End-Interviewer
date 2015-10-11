@@ -1,8 +1,22 @@
-Interview Questions!!!
+#Interview Questions!!!
+### for front-end developers
 
-what: display front-end interview questions in a quiz format
+##what 
+Display front-end interview questions in a quiz format, with customizable options.
+Part of the Meteor 2015 Global Distributed Hackathon: Orange County, CA chapter
 
-why: practice.
 
-question source: http://h5bp.github.io/Front-end-Developer-Interview-Questions
+##why
+For the sake of embetterment.
 
+
+##question sauce
+http://h5bp.github.io/Front-end-Developer-Interview-Questions
+
+
+##team
+Byron => byron@polished-web.com
+
+Andrew => uncle.optimus@github.com
+
+Jung => ??? Hey dude email one of us! Will be hacking away at this tonite and maybe tmrw! We got some ideas!!
