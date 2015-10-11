@@ -6,22 +6,13 @@ Template.customize.helpers({
 				category: 'general'
 			},
 			{
-				category: 'html'
+				category: 'HTML'
 			},
 			{
-				category: 'css'
+				category: 'CSS'
 			},
 			{
-				category: 'javascript'
-			},
-			{
-				category: 'testing'
-			},
-			{
-				category: 'performance'
-			},
-			{
-				category: 'network'
+				category: 'JavaScript'
 			}
 		];
 	}
