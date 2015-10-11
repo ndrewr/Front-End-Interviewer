@@ -1,0 +1,48 @@
+/* styles for landing view */
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+#landing {
+	padding: 20px;
+	margin: 20px auto;
+	text-align: center;
+
+	
+}
+
+#landing h2 {
+	text-shadow: 1px 1px 2px rgba(30,30,30,.7);
+	margin: 30px auto;
+	letter-spacing: 4px;
+}
+
+#landing h2:before,
+#landing h2:after {
+	content: '<';
+	margin: 0 .5em;
+	color: #0275d8;
+	text-shadow: none;
+}
+
+#landing h2:after {
+	content: '>';
+}
+
+
+
+#landing h4 {
+	font-style: italic;
+	margin: 30px auto;
+	color: #777;
+}
+
+#landing p {
+	margin: 5px auto;
+}
+
+#landing a {
+	margin: 20px auto;
+	max-width: 500px;
+}
