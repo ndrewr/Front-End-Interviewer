@@ -9,7 +9,7 @@ Meteor.methods({
 		// save
 		console.log(postId);
 		console.log(value);
-			Questions.update(postId, {$inc: {score: parseInt(value,10), votes: 1}});
+			Questions.update(postId, {$inc: {votes: 1}, $set: {score: parseInt(value, 10)}});
 		},
 		
 });

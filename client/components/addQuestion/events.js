@@ -1,7 +1,6 @@
 Template.add_question.events({
 	
 	'click #submitQuestionAnswer': function(e){
-		console.log('i was clicked')
 		var question = document.getElementById('questionText').value
 		var answer = document.getElementById('answerText').value
 		var catEl = document.getElementById('categoryText')
