@@ -1,0 +1,16 @@
+<template name="question">
+	<section id="question" class="container-fluid">
+	<h1>{{ question.category }}</h1>
+	{{ #if question }}
+		<h2>Question</h2>
+		<p>{{ question.question }}</p>
+
+		<h2>Answer</h2>
+		<p>{{ question.answer }}</p>
+	{{ /if }}
+
+		{{ #with question }}
+			{{> ratebar}}
+		{{ /with }}
+	</section>
+</template>

@@ -1,0 +1,29 @@
+
+<template name="ratebar">
+	<section id="ratebar" class="container-fluid ratebar__wrapper">
+
+		<ul class="list-inline text-center hearts">
+			<li class="ratebar__unit" data-rank="1">
+				<i class="fa fa-heart {{#if firstHeart}}icon-heart-full{{/if}} "></i>
+			</li>
+			<li class="ratebar__unit" data-rank="2">
+				<i class="fa fa-heart {{#if secondHeart}}icon-heart-full{{/if}}"></i>
+			</li>
+			<li class="ratebar__unit" data-rank="3">
+				<i class="fa fa-heart {{#if thirdHeart}}icon-heart-full{{/if}}"></i>
+			</li>
+			<li class="ratebar__unit" data-rank="4">
+				<i class="fa fa-heart {{#if fourthHeart}}icon-heart-full{{/if}}"></i>
+			</li>
+			<li class="ratebar__unit" data-rank="5">
+				<i class="fa fa-heart {{#if fifthHeart}}icon-heart-full{{/if}}"></i>
+			</li>
+		</ul>
+
+		<p class="ratebar__votebox">
+			<span>how heart?</span>
+			<span class="ratebar__count">{{voteCount}} votes</span>
+		</p>
+		
+	</section>
+</template>

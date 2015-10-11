@@ -22,6 +22,15 @@ FlowRouter.route('/quiz', {
   }
 });
 
+FlowRouter.route('/question/:questionId', {
+  triggersEnter: [function(context) {
+    Session.set('questionId', context.params.questionId)
+  }],
+  action: function(params, queryParams) {
+    BlazeLayout.render('layout', { main: 'question' })
+  }
+})
+
 FlowRouter.route('/add-question', {
   name: 'quiz',
   action: function() {

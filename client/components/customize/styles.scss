@@ -1,0 +1,9 @@
+#customize {
+	.list-group-item {
+
+		&.selected {
+			background: blue;
+			color: #fff;
+		}
+	}
+}

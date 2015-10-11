@@ -1,0 +1,57 @@
+#ratebar {
+/* styles for rating bar */
+
+	.icon {
+
+	/*	color: black;*/
+		width: 44px;
+		height: 44px;
+	}
+
+	.ratebar__wrapper {
+		/*float: right;*/
+		/*font-size: .5em;*/
+		/*margin: auto 0;*/
+		text-align: center;
+	}
+
+	.ratebar__votebox {
+
+	}
+
+	.hearts {
+		font-size: 40px;
+	}
+	.ratebar__votebox span {
+		font-size: 12px;
+		color: #777;
+		display: block;
+	}
+
+	.ratebar__counter {
+		margin-left: 10px;
+		font-size: 12px;
+		color: #777;
+	}
+
+	.icon-github {
+		width: 44px;
+		height: 44px;
+		color: aliceblue;
+		margin-top: 1em;
+	}
+	.icon-github:hover {
+		color: #F08C35;
+	}
+
+	.icon-heart-full {
+		color: red;
+	}
+
+	.icon-increase, .icon-decrease {
+		height: 32px;
+		width: 32px;
+	}
+
+
+}
