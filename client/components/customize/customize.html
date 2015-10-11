@@ -1,6 +1,18 @@
 <template name="customize">  
 	<div class="container-fluid" id="customize">
+		<a href="/" class="btn btn-primary-outline">X</a>
 		<h1>CUSTOM</h1>
+
+		{{ #if questions }}
+			<ul class="list-group">
+			{{ #each questions }}
+				<li class="list-group-item">
+					{{ question }}
+				</li>
+			{{ /each }}
+			</ul>
+
+		{{ /if }}
 	</div>
 
 </template>

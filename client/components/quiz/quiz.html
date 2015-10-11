@@ -1,6 +1,19 @@
-<template name="quiz">  
-	<div class="container-fluid" id="quiz">
+<template name="quiz">
+	<section class="container-fluid" id="quiz">
+		<a href="/" class="btn btn-primary-outline">X</a>
+
 		<h1>QUIZ</h1>
-	</div>
+
+		{{ #if questions }}
+			<ul class="list-group">
+			{{ #each questions }}
+				<li class="list-group-item">
+					{{ question }}
+				</li>
+			{{ /each }}
+			</ul>
+
+		{{ /if }}
+	</section>
 
 </template>
