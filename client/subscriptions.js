@@ -1,3 +1,3 @@
 Tracker.autorun( function() {
-	// Meteor.subscribe('games');
+	Meteor.subscribe('questions');
 });

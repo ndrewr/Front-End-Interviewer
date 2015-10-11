@@ -1,15 +1,23 @@
-// create route group named 'exposed'
-var publicRoutes = FlowRouter.group({
-  name: 'publicRoutes',
-  triggersEnter: [function(context, redirect) {
-    console.log('running exposed group triggers');
-  }]
-});
+
 
 // define routes pertaining to 'exposed' group
-publicRoutes.route('/', {
+FlowRouter.route('/', {
   name: 'landing',
   action: function() {
-    BlazeLayout.render('layout', { main: 'landing' })
+    BlazeLayout.render('layout', { main: 'landing' });
   }
-})
+});
+
+FlowRouter.route('/customize', {
+  name: 'customize',
+  action: function() {
+    BlazeLayout.render('layout', { main: 'customize' });
+  }
+});
+
+FlowRouter.route('/quiz', {
+  name: 'quiz',
+  action: function() {
+    BlazeLayout.render('layout', { main: 'quiz' });
+  }
+});
