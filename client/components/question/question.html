@@ -1,9 +1,7 @@
 <template name="question">
 	<section id="question" class="container-fluid">
-	<a href="/quiz" class="btn btn-primary-outline btn-sm">
-		<i class="fa fa-chevron-left fa-2x"></i>
-	</a>
-	<h1>{{ question.category }}</h1>
+
+	<h5>{{ question.category }}</h5>
 	{{ #if question }}
 		<h2>Question</h2>
 		<p>{{ question.question }}</p>
