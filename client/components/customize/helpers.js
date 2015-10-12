@@ -20,7 +20,8 @@ Template.customize.helpers({
 	// if the list exists return question ID, else redirect
 	firstQuestionID: function() {
 		var list = Session.get("combo_list");
-		if(list) return Session.get("combo_list")[0]._id;
+		if(list && list[0]) return list[0]._id;
+		else return "YxfassQHWtXdmMAzq";
 		// else FlowRouter.go("/");
 	}
 	

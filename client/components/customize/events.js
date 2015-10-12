@@ -11,29 +11,29 @@ Template.customize.events({
 		// if(!el.classList.contains('selected')){
 		// 	el.classList.add('selected')
 		// }
-
-		// Session.set('category', this.category)
-		// console.log(Session.get('category'))
+		Session.set('category', this.category)
 
 		el.classList.toggle('selected')
 	},
 
 	// build a question list, navigate to first question in list
+	// needs work!
 	'click #start': function(e) {
 
+		// query for multiple categories
 		var categories = [].slice.call(document.querySelectorAll('.selected')).map(function(selected_element) {
 			return selected_element.textContent;
 		});
-
-		// query for multiple categories
 		var question_list = Questions.find({category: {$in: categories}}).fetch();
 
-		//set question list to be accessible in Quiz view
-		Session.set("combo_list", question_list);
-		Session.set("quiz_index", 0);
-		Session.set("quiz_length", question_list.length);
-
 		console.log("list has %s questions.", question_list.length);
+
+		//set question list to be accessible in Quiz view
+		if (question_list.length > 0) {
+			Session.set("combo_list", question_list);
+			Session.set("quiz_index", 0);
+			Session.set("quiz_length", question_list.length);
+		}
 	}
 
 });

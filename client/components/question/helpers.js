@@ -1,6 +1,3 @@
-// default set to 0 to avoid NaN error
-Session.setDefault('quiz_index', 0);
-Session.setDefault('quiz_length', 0);
 
 Template.question.helpers({
 
