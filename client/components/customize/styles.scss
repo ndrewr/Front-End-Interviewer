@@ -1,9 +1,15 @@
 #customize {
+	text-align: center;
+
 	.list-group-item {
 
 		&.selected {
 			background: blue;
 			color: #fff;
 		}
+	}
+
+	a {
+		margin: 40px auto;
 	}
 }
