@@ -14,9 +14,20 @@ For the sake of embetterment.
 http://h5bp.github.io/Front-end-Developer-Interview-Questions
 
 
+##package list
+Meteor 1.2
+Flow Router
+Bootstrap
+
+
 ##team
 Byron => byron@polished-web.com
 
 Andrew => uncle.optimus@gmail.com
 
-Jung => ??? Hey dude email one of us! Will be hacking away at this tonite and maybe tmrw! We got some ideas!!
+
+##features
+- Random quiz mode of 10 questions
+- Select and view question categories
+- Dynamic difficulty ranking system for each question
+- future: ???
