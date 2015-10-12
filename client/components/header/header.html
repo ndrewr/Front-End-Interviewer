@@ -2,7 +2,11 @@
 
 	<nav id="header" class="navbar navbar-light bg-faded">
 	  <div class="navbar-brand" href="#">
-	  	<a href="{{ backBtn }}" class="btn btn-primary-outline btn-sm"><i class="fa fa-chevron-left"></i></a>
+	  	{{ #if notLanding }}
+	  	<a href="{{ backBtn }}" class="btn btn-primary-outline btn-sm">
+	  		<i class="fa fa-chevron-left"></i>
+	  	</a>
+	  	{{ /if }}
 	  	{{ title }}
 	  </div>
 	</nav>

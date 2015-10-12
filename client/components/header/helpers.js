@@ -5,6 +5,9 @@ Template.header.helpers({
 	},
 	backBtn: function(){
 		return Session.get('backBtn')
+	},
+	notLanding: function() {
+		return FlowRouter.getRouteName() !== 'landing'
 	}
 
 })
