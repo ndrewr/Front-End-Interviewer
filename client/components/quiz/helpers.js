@@ -27,6 +27,11 @@ Template.quiz.helpers({
 
 		// console.log(random_questions);
 		return random_questions;
+	},
+
+	randomMode: function() {
+		return FlowRouter.getRouteName() === 'random'
+
 	}
 
 

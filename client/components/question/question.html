@@ -1,20 +1,22 @@
 <template name="question">
 	<section id="question" class="container-fluid">
 
-	<h5>{{ question.category }}</h5>
+	<h5>category: <strong>{{ question.category }}</strong></h5>
+	<br>
 	{{ #if question }}
-		<h2>Question</h2>
+		<h3>Question</h3>
+		<br>
 		<p>{{ question.question }}</p>
-
-		<h2>Answer</h2>
-		<p>{{ question.answer }}</p>
+		<br>
+		<!-- <h2>Answer</h2>
+		<p>{{ question.answer }}</p> -->
 	{{ /if }}
 
 		{{ #with question }}
 			{{> ratebar}}
 		{{ /with }}
 
-		<a href="/question/{{ nextQuestionID }}" class="btn btn-primary-outline">next!</a>
+		<!-- <a href="/question/{{ nextQuestionID }}" class="btn btn-primary-outline">next!</a> -->
 
 	</section>
 </template>

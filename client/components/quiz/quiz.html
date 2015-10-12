@@ -1,15 +1,29 @@
 <template name="quiz">
 	<section class="container-fluid" id="quiz">
 
-		{{ #if questions }}
-			<ul class="list-group">
-			{{ #each questions }}
-				<li class="list-group-item">
-					<a href="/question/{{_id}}">{{ question }}</a>
-				</li>
-			{{ /each }}
-			</ul>
+		{{ #if randomMode }}
+			{{ #if randomQuestions }}
+				<ul class="list-group">
+				{{ #each randomQuestions }}
+					<li class="list-group-item">
+						<a href="/question/{{_id}}">{{ question }}</a>
+					</li>
+				{{ /each }}
+				</ul>
+			{{ /if }}
 
+		{{ else }}
+
+			{{ #if questions }}
+				<ul class="list-group">
+				{{ #each questions }}
+					<li class="list-group-item">
+						<a href="/question/{{_id}}">{{ question }}</a>
+					</li>
+				{{ /each }}
+				</ul>
+
+			{{ /if }}
 		{{ /if }}
 	</section>
 

@@ -34,6 +34,17 @@ FlowRouter.route('/quiz', {
   }
 });
 
+FlowRouter.route('/random', {
+  triggersEnter: [function(context) {
+    Session.set('title', 'Random Quiz'),
+    Session.set('backBtn', '/')
+  }],
+  name: 'random',
+  action: function() {
+    BlazeLayout.render('layout', { main: 'quiz' });
+  }
+});
+
 FlowRouter.route('/question/:questionId', {
   triggersEnter: [function(context) {
     Session.set('questionId', context.params.questionId)
