@@ -4,7 +4,8 @@
 FlowRouter.route('/', {
   triggersEnter: [function(context) {
     Session.set('title', 'The Interview'),
-    Session.set('backBtn', '/')
+    Session.set('backBtn', '/'),
+    Session.set('random_list', []) // wipe the random list    
   }],
   name: 'landing',
   action: function() {
@@ -49,7 +50,8 @@ FlowRouter.route('/question/:questionId', {
   triggersEnter: [function(context) {
     Session.set('questionId', context.params.questionId)
     Session.set('title', 'Question'),
-    Session.set('backBtn', '/quiz')
+    Session.set('backBtn', Session.get('prev_url'))
+    // Session.set('backBtn', '/quiz')
   }],
   action: function(params, queryParams) {
     BlazeLayout.render('layout', { main: 'question' })
