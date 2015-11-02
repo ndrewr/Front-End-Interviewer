@@ -4,11 +4,16 @@ Template.quiz.helpers({
 
 	questions: function() {
 		var quizCategory = Session.get('category')
-		// console.log(Session.get('category'))
-		var data = Questions.find({ category: Session.get('category')}).fetch();
+		// var data = Questions.find({ category: Session.get('category')}).fetch();
 		// console.log(data)
 
+		var data = Session.get('combo_list') // get the questions set in customize
+
 		Session.set('prev_url', '/quiz'); // used to set question view backBtn
+		Session.set('quiz_length', data.length);
+
+		Session.set('random', false);
+
 		return data;
 	},
 
@@ -31,7 +36,12 @@ Template.quiz.helpers({
 
 		Session.set('random_list', random_questions); // save the list
 		Session.set('prev_url', '/random'); // used to set question view backBtn
-		// console.log(random_questions);
+		Session.set('quiz_length', 10);
+
+
+		Session.set('random', true);
+
+
 		return random_questions;
 	},
 

@@ -12,11 +12,11 @@
 		<p>{{ question.answer }}</p> -->
 	{{ /if }}
 
-		{{ #with question }}
-			{{> ratebar}}
-		{{ /with }}
+	{{ #with question }}
+		{{> ratebar}}
+	{{ /with }}
 
-		<!-- <a href="/question/{{ nextQuestionID }}" class="btn btn-primary-outline">next!</a> -->
+	<a id="next" href="/question/{{ nextQuestionID }}" class="btn btn-primary-outline">next!</a>
 
 	</section>
 </template>

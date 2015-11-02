@@ -8,14 +8,12 @@ Template.question.helpers({
 	},
 
 	nextQuestionID: function() {
-		var current_index = parseInt(Session.get('quiz_index'), 10);
-				next_index = (current_index + 1) === Session.get('quiz_length') ? 0 : (current_index + 1);
-				next_question = Session.get('combo_list')[next_index];
+	// works for random quiz only (10 question)
+		var next_index = Session.get('quiz_index'),
+				list_type = Session.get('random') ? 'random_list' : 'combo_list'
+				next_question_id = Session.get(list_type)[next_index]._id 
 
-		// update the current question index
-		Session.set('quiz_index', next_index);
-		// return next_question._id;
-		return next_index
+		return next_question_id;
 	}
 
 })
