@@ -7,13 +7,13 @@ Template.question.helpers({
 		return question
 	},
 
+	// checks global quiz mode and grabs next question id
 	nextQuestionID: function() {
-	// works for random quiz only (10 question)
 		var next_index = Session.get('quiz_index'),
 				list_type = Session.get('random') ? 'random_list' : 'combo_list'
 				next_question_id = Session.get(list_type)[next_index]._id 
 
-		return next_question_id;
+		return next_question_id
 	}
 
 })

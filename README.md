@@ -43,3 +43,6 @@ click handler
 appropriate question list (random vs custom)
 - PROBLEM: nextQuestionID always starts from 1st question no matter the question user
 selects from Question list
+...using @index in template to attach data-attr. I then grab this ref on click of a 
+question in the list to establish the current index ... seems to work!
+VERY similar to click handler in question.events... turn into global helper func?
