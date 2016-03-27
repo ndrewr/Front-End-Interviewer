@@ -5,6 +5,8 @@
 Display front-end interview questions in a quiz format, with customizable options.
 Part of the Meteor 2015 Global Distributed Hackathon: Orange County, CA chapter
 
+event: http://meteor-2015.devpost.com/
+project: http://devpost.com/software/theinterview
 
 ##why
 For the sake of embetterment.
